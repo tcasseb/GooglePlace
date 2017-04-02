@@ -1,0 +1,21 @@
+.header {
+    height: 60px;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 6px;
+    padding-bottom: 0px;
+}
+
+.container {
+    width: 100%;
+    background-color: honeydew;
+}
+
+.footer {
+    height: 50px;
+    width: 100%;
+    background-color: orangered;
+}
+
+
+

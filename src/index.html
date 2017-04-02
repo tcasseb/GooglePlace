@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simplificaa Solu&ccedil;&otilde;es Automotivas</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <!-- build:css assets/css/styles.css -->
+    <link rel="stylesheet" href="assets/css/animations.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="sections/home/home.css"/>
+    <!-- endbuild -->
+
+</head>
+<body data-ng-app="app">
+
+    <header class="header">
+        <div>
+            <img src="assets/images/logo.png" class="logo" alt="">
+        </div>
+    </header>
+
+    <section class="container" data-ng-controller="HomeController as home">
+        <ng-view></ng-view>
+    </section>
+
+    <footer class="footer">
+
+    </footer>
+
+    <!-- build:assets assets.min.js -->
+    <!-- ASSETS -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIO5pZMBQ5NmMCwBWsFBsnR9rpZRdk29Q&language=pt&libraries=geometry,places,reviews"></script>
+        <script src="assets/js/angular.min.js"></script>
+        <script src="assets/js/angular-animate.min.js"></script>
+        <script src="assets/js/angular-cookies.min.js"></script>
+        <script src="assets/js/angular-route.min.js"></script>
+        <script src="assets/js/angular-touch.min.js"></script>
+        <script src="assets/js/moment.min.js"></script>
+        <script src="assets/js/angular-moment.min.js"></script>
+        <script src="assets/js/angular-truncate.js"></script>
+        <script src="assets/js/angular-preload-image.min.js"></script>
+    <!-- / -->
+    <!-- endbuild -->
+    <!-- build:js app.min.js -->
+    <!-- MODULES -->
+        <script src="app.routes.js"></script>
+        <script src="app.config.js"></script>
+        <script src="app.core.js"></script>
+        <script src="app.services.js"></script>
+        <script src="app.js"></script>
+    <!-- / -->
+    <!-- CONTROLLERS -->
+        <script src="sections/home/home.ctrl.js"></script>
+    <!-- / -->
+    <!-- SERVICES -->
+        <script src="services/googleMaps.fct.js"></script>
+        <script src="services/page.val.js"></script>
+    <!-- / -->
+    <!-- DIRECTIVES -->
+        <script src="directives/ngEnter.drct.js"></script>
+    <!-- / -->
+    <!-- inject:js -->
+    <!-- endinject -->
+    <!-- endbuild -->
+</body>
+</html>

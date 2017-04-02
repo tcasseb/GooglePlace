@@ -1,0 +1,28 @@
+{
+  "name": "simplificaa-googlePalces",
+  "version": "1.0.0",
+  "description": "Busca de oficinas mecânicas utilizando API Google Places.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tcasseb/GooglePlace.git"
+  },
+  "keywords": [
+    "angularjs",
+    "example",
+    "angularjs",
+    "tutorial",
+    "angularjs"
+  ],
+  "author": "Thiago Casseb",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/tcasseb/GooglePlace.git"
+  },
+  "devDependencies": {
+
+  }
+}

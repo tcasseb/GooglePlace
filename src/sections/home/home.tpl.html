@@ -1,0 +1,65 @@
+<div>
+
+    <h3>{{home.pageTitle}}<h3>
+    <h4>{{home.pageDescription}}<h4>
+
+    <div class="addressBlock">
+        <div class="form">
+            <b>CEP ou endereço:</b> <input type="txtZipCode" ng-model="home.location.zipCode" ng-enter="home.getAddressByZipCode()" class="input-cep">
+
+            <input type="checkbox" ng-model="home.places.open_now" value="true" /> <b>Abertos agora</b>
+
+            <input type="button" value="Buscar" ng-click="home.getAddressByZipCode()" class="input-button" />
+
+
+
+        </div>
+
+        <div class="description" ng-show="home.location.addressCompleted">
+            <b>Localização:</b> {{home.location.address}}
+        </div>
+        <div class="nenhum-resultado" ng-show="home.location.searchStarted && home.location.address == ''">
+            {{home.messages.address}}
+        </div>
+
+
+    </div>
+
+    <div class="placesBlock">
+        <div class="places-title">
+            Locais encontrados:
+        </div>
+
+        <div class="places-filter" ng-if="home.places.resultsFilter.length > 0">
+            <b>Filtrar rating:</b>
+            <select ng-change="home.changeRatingFilter()" ng-model="home.filter.rating">
+                <option value="5">Somente 5</option>
+                <option value="4">4 ou mais</option>
+                <option value="3">3 ou mais</option>
+                <option value="2">2 ou mais</option>
+                <option value="1" selected>Todos</option>
+            </select>
+        </div>
+
+        <ul>
+            <li ng-repeat="place in home.places.resultsFilter">
+                <div class="place-name"><img src="{{place.icon}}" alt="" class="place-icon" /> {{place.name}}</div>
+                <div class="place-address">{{place.vicinity}}</div>
+                <div class="place-rating" ng-if="place.rating">
+                    <img src="/assets/images/star-icon.png" class="place-rating-icon" /> {{place.rating}}
+                </div>
+                <div class="place-open-time" ng-if="place.opening_hours.open_now">
+                    <img src="/assets/images/clock-icon.png" class="place-open-time-icon" /> Aberto agora!
+                </div>
+                <br ng-if="place.rating || place.opening_hours.open_now" />
+            </li>
+        </ul>
+        <div class="nenhum-resultado" ng-if="home.places.results.length < 1">
+            {{home.messages.places}}
+        </div>
+    </div>
+
+    <div class="mapBlock">
+        <div id="map"></div>
+    </div>
+</div>

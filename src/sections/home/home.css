@@ -1,0 +1,133 @@
+h3 {
+    font-weight: bold;
+    color: darkslategray;
+}
+
+.input-cep {
+    margin-right: 20px;
+}
+
+.input-button {
+    margin-left: 20px;
+}
+
+.addressBlock {
+    float: left;
+    height: 67px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: white;
+    padding: 10px;
+    font-size: small;
+}
+
+.addressBlock .form {
+    padding-bottom: 10px;
+}
+
+.addressBlock .description {
+    font-size: small;
+}
+
+.addressBlock .nenhum-resultado {
+    font-size: small;
+    color: red;
+}
+
+.addressBlock .address-filter {
+    font-size: small;
+    padding-right: 10px;
+}
+
+.placesBlock {
+    overflow-y: scroll;
+    float: left;
+    height: 400px;
+    width: 29.5%;
+    margin-right: 0.5%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.placesBlock .places-title {
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.placesBlock .nenhum-resultado {
+    font-size: small;
+    color: red;
+    padding-left: 5px;
+}
+
+.placesBlock .places-filter {
+    font-size: small;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+ }
+
+.mapBlock {
+    float: left;
+    height: 400px;
+    width: 69.5%;
+    margin-left: 0.5%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+.placesBlock ul {
+    list-style-type: none;
+    padding: 5px;
+}
+
+.placesBlock ul li {
+    padding-bottom: 10px;
+}
+
+.placesBlock ul li .place-name {
+    font-size: small;
+    font-weight: bold;
+}
+
+.placesBlock ul li .place-address {
+    font-size: small;
+}
+
+.placesBlock ul li .place-open-time {
+    font-size: small;
+    color: blue;
+    float: left;
+}
+
+.placesBlock ul li .place-open-time-icon {
+    width: 10px;
+    height: 10px;
+    margin-bottom: 4px;
+}
+
+.placesBlock ul li .place-icon {
+    width: 10px;
+    height: 10px;
+    margin-bottom: 4px;
+}
+
+.placesBlock ul li .place-rating {
+    font-size: small;
+    float: left;
+    padding-right: 10px;
+}
+
+.placesBlock ul li .place-rating-icon {
+    width: 10px;
+    height: 10px;
+    margin-bottom: 4px;
+}
