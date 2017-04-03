@@ -5,7 +5,7 @@ angular
 
         //Set page title and description
         PageValues.title = "Busca por CEP";
-        PageValues.description = "Busca de oficinas mec‚nicas utilizando API Google Places.";
+        PageValues.description = "Busca de oficinas mec√¢nicas utilizando API Google Places.";
 
         //Setup view model object
         var vm = this;
@@ -14,7 +14,7 @@ angular
         vm.pageDescription = PageValues.description;
 
         vm.messages = {
-            address: "… necess·rio digitar o CEP ou parte do endereÁo.",
+            address: "√â necess√°rio digitar o CEP ou parte do endere√ßo.",
             places: "Aguardando a busca ser iniciada :)"
         }
 
@@ -72,12 +72,12 @@ angular
                         vm.location.addressCompleted = true;
                         vm.getPlacesByLatLng();
                     } else {
-                        vm.messages.address ="Nenhum endereÁo foi encontrado. Tente novamente";
+                        vm.messages.address ="Nenhum endere√ßo foi encontrado. Tente novamente";
                         vm.messages.places = "Aguardando a busca ser iniciada :)";
                     }
                 });
             } else {
-                vm.messages.address = "… necess·rio digitar o CEP ou parte do endereÁo.";
+                vm.messages.address = "√â necess√°rio digitar o CEP ou parte do endere√ßo.";
             };
         };
 
