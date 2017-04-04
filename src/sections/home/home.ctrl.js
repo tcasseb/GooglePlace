@@ -4,7 +4,7 @@ angular
     .controller('HomeController', function($scope, PageValues, GoogleMapsService) {
 
         //Set page title and description
-        PageValues.title = "Busca por CEP";
+        PageValues.title = "Busca de Oficinas Mecânicas";
         PageValues.description = "Busca de oficinas mecânicas utilizando API Google Places.";
 
         //Setup view model object
